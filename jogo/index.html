@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Super Mario</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <div class="game-board">
-      <img src="./image/nuvem.png" class="nuvem" />
-      <img src="./image/mario.gif" class="mario" />
-      <img src="./image/pipe.png" class="pipe" />
+      <img src="./images/clouds.png" class="clouds-1" />
+      <img src="./images/clouds.png" class="clouds-2" />
+      <img src="./images/clouds.png" class="clouds-3" />
+      <img src="./images/mario-stop.png" class="mario" />
+      <img src="./images/pipe.png" class="pipe" />
+      <img src="./images/grass.png" class="grass" />
+
+      <div class="floor">
+        <img src="./images/floor.png" class="floor-1" />
+        <img src="./images/floor.png" class="floor-2" />
+        <img src="./images/floor.png" class="floor-3" />
+      </div>
     </div>
+
+    <p id="text-start">
+      <button
+        onclick="window.location.reload()"
+        style="cursor: pointer"
+        class="button"
+      ></button
+      >Para jogar, pressione alguma tecla
+    </p>
+
+    <script src="./script.js" defer></script>
   </body>
 </html>
